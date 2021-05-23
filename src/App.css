@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.bigThangs{
+  font-size: 180px;
+}
+
+.spinningShimmerIn{
+  animation: spinningShimmerIn 4s ease-out;
+}
+@keyframes spinningShimmerIn{
+  0%{
+    filter:blur(500px);
+    transform:rotateZ(0deg);
+  }
+  100%{
+    filter: blur(0px);
+    transform:rotateZ(1440deg)
+  }
+}
